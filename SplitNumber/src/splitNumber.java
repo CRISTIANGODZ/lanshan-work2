@@ -16,7 +16,7 @@ public class splitNumber {
         n=sc.nextInt();
         method1(0,0,0);
     }
-    public static void method1(int max,int m,int n){
+    public static void method1(int max,int m,int l){
         if (max==n){
             for (int i = 1; i < m; i++) {
                 System.out.print(a[i]+"+");
@@ -24,7 +24,7 @@ public class splitNumber {
             System.out.println(a[m]);
         }
         for (int i = 1; i < n; i++) {
-            if ((max+i)<=n&&i>=n){
+            if ((max+i)<=n&&i>=l){
                 a[m+1]=i;
                 m++;
                 method1(max+i,m,i);
